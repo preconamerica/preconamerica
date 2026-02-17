@@ -3,61 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRECON AMERICA LLC - Pre-Construction and Project Management Consulting</title>
-    <!-- Bootstrap CSS -->
+    <title>PRECON AMERICA LLC - Pre-Construction & Project Management Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <style>
         :root {
-            --primary-color: #00AEEF; /* Light blue from PDF */
-            --secondary-color: #003366; /* Dark blue for contrast */
+            --primary: #00AEEF;
+            --secondary: #003366;
         }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-        }
-        .navbar {
-            background-color: var(--primary-color);
-        }
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
+        body { font-family: 'Arial', sans-serif; line-height: 1.7; }
+        .navbar { background-color: var(--primary); }
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; }
         .hero {
-            background-image: url('images/hero.jpg'); /* Upload a hero image, e.g., construction blueprint or site */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 150px 0;
-            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-construction.jpg');
+            background-size: cover; background-position: center;
+            color: white; padding: 180px 0; text-align: center;
         }
         .section-title {
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            color: var(--secondary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 12px;
+            margin-bottom: 40px;
+            font-weight: bold;
         }
-        .project-card {
-            margin-bottom: 20px;
-        }
-        .project-img {
-            height: 200px;
-            object-fit: cover;
-        }
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+        .project-card .card-img-top { height: 220px; object-fit: cover; }
+        footer { background: var(--secondary); color: white; padding: 30px 0; }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">PRECON AMERICA LLC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -72,88 +50,85 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Welcome to PRECON AMERICA LLC</h1>
-            <p>Expert Consulting in Pre-Construction and Project Management for Sustainable Growth</p>
-            <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+            <h1 class="display-4 fw-bold">PRECON AMERICA LLC</h1>
+            <p class="lead">Consultoría especializada en Pre-Construcción, Estimación de Costos y Gestión de Proyectos</p>
+            <p>Optimizamos procesos para proyectos de $5MM a $400MM+, reduciendo costos y maximizando rentabilidad.</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Contáctenos</a>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
+            <h2 class="section-title text-center">Sobre PRECON AMERICA LLC</h2>
+            <p class="lead text-center mb-5">Firma de consultoría con sede en Miami, Florida, especializada en mejorar la eficiencia de procesos de pre-construcción, licitaciones, contrataciones y control de costos en proyectos de construcción de gran escala.</p>
+            
             <div class="row">
-                <div class="col-md-4">
-                    <img src="images/javier.jpg" alt="Javier Balza" class="img-fluid rounded-circle mb-3"> <!-- Upload image1.jpeg as javier.jpg -->
+                <div class="col-md-6">
+                    <h4>Nuestra Misión</h4>
+                    <p>Brindamos herramientas y estrategias probadas para que constructoras, desarrolladores y entidades públicas reduzcan costos hasta un 10%, aumenten adjudicaciones y mejoren la rentabilidad, con enfoque en transparencia, tecnología y cumplimiento normativo.</p>
                 </div>
-                <div class="col-md-8">
-                    <p>Javier Balza, MBA, is a seasoned civil engineer with over 15 years of experience in large-scale projects ranging from $5MM to $400MM. As the founder of PRECON AMERICA LLC, based in Florida, Javier brings expertise in pre-construction processes, project management, and cost control. With international experience in multicultural environments, he has led teams to reduce project costs by up to 10% and increase profitability through improved contracting and risk management strategies.</p>
-                    <h3>Education</h3>
-                    <ul>
-                        <li>Master of Project Management, Universidad Interamericana de Panamá (2016, Cum Laude)</li>
-                        <li>Specialization in Project Design, Universidad Interamericana de Panamá (2015, Cum Laude)</li>
-                        <li>Bachelor of Civil Engineering (Revalidated), Universidad Tecnológica de Panamá (2024)</li>
-                        <li>Bachelor of Civil Engineering (Revalidated), Universidad de Costa Rica (2023)</li>
-                        <li>Bachelor of Civil Engineering, Universidad de Carabobo, Venezuela (2009, 4th in class)</li>
-                    </ul>
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>Software: Procore, On-Screen Takeoff, AutoCAD, Office, Adobe Acrobat, Drone Deploy, OpenSpace, Revizto, Lulo Software, Monday</li>
-                        <li>Certifications: IPMA Level D Certified Project Management Administrator</li>
-                        <li>Languages: English (Advanced), Spanish (Native)</li>
-                    </ul>
-                    <h3>Professional Experience</h3>
-                    <p>Senior Lead Estimator at Florida Construction & Engineering, Inc (2025 – Current); Director of Pre-Construction and Contracts at Edificar (2015-2024), achieving 20% increase in awarded projects; Chief of Works and Engineering at Concreacero (2009-2014).</p>
+                <div class="col-md-6">
+                    <h4>Nuestros Principals</h4>
+                    <p>Liderados por Javier Balza, MBA – Ingeniero Civil con más de 15 años de experiencia internacional, Maestría en Gerencia de Proyectos (Cum Laude), Especialización en Diseño de Proyectos y certificación IPMA Level D. Ha dirigido pre-construcción en proyectos emblemáticos en Panamá, Costa Rica y Belice.</p>
+                    <a href="https://www.linkedin.com/in/javier-balza" class="btn btn-outline-primary" target="_blank">LinkedIn de Javier Balza</a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                    <h5>Ubicación</h5>
+                    <p>Miami, Florida, USA</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Email</h5>
+                    <p>javier@preconamerica.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Experiencia</h5>
+                    <p>+15 años en proyectos $5MM – $400MM+</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+            <h2 class="section-title text-center">Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h4>Pre-Construction Process</h4>
-                            <p>Identify project requirements, define scope, coordinate stakeholders, conduct feasibility studies, select methods and materials, develop construction strategy.</p>
+                            <h5>Pre-Construcción Estratégica</h5>
+                            <p>Definición de alcance, coordinación de stakeholders, estudios de factibilidad, selección de materiales y métodos constructivos.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h4>Budget Process</h4>
-                            <p>Calculate execution costs, quantify materials, quote suppliers, analyze unit prices, estimate indirect costs, define contingencies and profits.</p>
+                            <h5>Estimación y Presupuesto</h5>
+                            <p>Análisis de precios unitarios, cuantificación precisa, costos indirectos, imprevistos y utilidad realista.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h4>Bidding and Contracting Processes</h4>
-                            <p>Use systems like Procore for transparent bidding, create procurement schedules, select qualified vendors, hold alignment meetings, compare bids, sign contracts.</p>
+                            <h5>Licitaciones y Contrataciones</h5>
+                            <p>Procesos transparentes con plataformas como Procore, homologación de ofertas y selección del mejor valor.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h4>Cost Control and Change Orders</h4>
-                            <p>Monitor costs against budget, track plan changes, manage change orders, verify timelines and resources, produce reports, mitigate risks, document lessons learned.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4>Opportunity Zones Development</h4>
-                            <p>Plan projects to foster economic development in IRS-designated opportunity zones, stimulating growth and job creation in low-income communities.</p>
+                            <h5>Control de Costos y Change Orders</h5>
+                            <p>Seguimiento financiero, mitigación de riesgos, informes mensuales y lecciones aprendidas para mejora continua.</p>
                         </div>
                     </div>
                 </div>
@@ -161,262 +136,148 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="section-title">Our Projects</h2>
-            <ul class="nav nav-tabs" id="projectsTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="residential-tab" data-bs-toggle="tab" data-bs-target="#residential" type="button" role="tab">Residential</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="industrial-tab" data-bs-toggle="tab" data-bs-target="#industrial" type="button" role="tab">Industrial</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="institutional-tab" data-bs-toggle="tab" data-bs-target="#institutional" type="button" role="tab">Institutional</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="commercial-tab" data-bs-toggle="tab" data-bs-target="#commercial" type="button" role="tab">Commercial</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="hospitality-tab" data-bs-toggle="tab" data-bs-target="#hospitality" type="button" role="tab">Hospitality</button>
-                </li>
+            <h2 class="section-title text-center">Proyectos de Éxito de Nuestros Principals</h2>
+            <p class="text-center lead mb-5">Ejemplos reales donde aplicamos nuestras metodologías, logrando adjudicaciones, ahorros significativos y entrega exitosa.</p>
+
+            <ul class="nav nav-tabs justify-content-center mb-4" id="projectsTab" role="tablist">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#residential">Residential</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#institutional">Institutional</button></li>
+                <!-- Puedes agregar más tabs: Industrial, Commercial, Hospitality si tienes imágenes -->
             </ul>
-            <div class="tab-content" id="projectsTabContent">
-                <div class="tab-pane fade show active" id="residential" role="tabpanel">
-                    <div class="row">
-                        <!-- Residential Projects -->
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/live_jaco.jpg" class="card-img-top project-img" alt="LIVE JACO"> <!-- Extract from PDF page 2 -->
+
+            <div class="tab-content">
+                <!-- Residential -->
+                <div class="tab-pane fade show active" id="residential">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/live_jaco.jpg" class="card-img-top" alt="LIVE JACÓ">
                                 <div class="card-body">
-                                    <h5>LIVE JACO, COSTA RICA</h5>
-                                    <p>Area: 242,000 sf<br>Budget: $20,000,000<br>Year: 2024</p>
+                                    <h5>LIVE JACÓ, Costa Rica</h5>
+                                    <p>Área: 242,000 sf<br>Presupuesto: $20,000,000<br>Año: 2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/punta_esmeralda_torre4.jpg" class="card-img-top project-img" alt="PUNTA ESMERALDA TORRE 4">
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/punta_esmeralda_torre4.jpg" class="card-img-top" alt="PUNTA ESMERALDA TORRE 4">
                                 <div class="card-body">
-                                    <h5>PUNTA ESMERALDA TORRE 4, COSTA RICA</h5>
-                                    <p>Area: 156,000 sf<br>Budget: $16,000,000<br>Year: 2024</p>
+                                    <h5>PUNTA ESMERALDA TORRE 4, Costa Rica</h5>
+                                    <p>Área: 156,000 sf<br>Presupuesto: $16,000,000<br>Año: 2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/mohari.jpg" class="card-img-top project-img" alt="MOHARI">
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/mohari.jpg" class="card-img-top" alt="MOHARI">
                                 <div class="card-body">
-                                    <h5>MOHARI, COSTA RICA</h5>
-                                    <p>Area: 27,000 sf<br>Budget: $18,000,000<br>Year: 2024</p>
+                                    <h5>MOHARI, Costa Rica</h5>
+                                    <p>Área: 27,000 sf<br>Presupuesto: $18,000,000<br>Año: 2024</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Add more residential projects similarly -->
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/villa22_92_94.jpg" class="card-img-top project-img" alt="VILLA 22, 92 Y 94">
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/villa22_92_94.jpg" class="card-img-top" alt="VILLA 22, 92 Y 94">
                                 <div class="card-body">
-                                    <h5>VILLA 22, 92 Y 94, BELICE</h5>
-                                    <p>Area: 29,000 sf<br>Budget: $27,000,000<br>Year: 2023</p>
+                                    <h5>VILLA 22, 92 Y 94, Belice</h5>
+                                    <p>Área: 29,000 sf<br>Presupuesto: $27,000,000<br>Año: 2023</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/viva_jaco.jpg" class="card-img-top project-img" alt="VIVA JACO">
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/viva_jaco.jpg" class="card-img-top" alt="VIVA JACO">
                                 <div class="card-body">
-                                    <h5>VIVA JACO, COSTA RICA</h5>
-                                    <p>Area: 160,000 sf<br>Budget: $13,000,000<br>Year: 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/santa_familia.jpg" class="card-img-top project-img" alt="SANTA FAMILIA">
-                                <div class="card-body">
-                                    <h5>SANTA FAMILIA, PANAMÁ</h5>
-                                    <p>Area: 140,000 sf<br>Budget: $22,000,000<br>Year: 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/punta_esmeralda_torre3.jpg" class="card-img-top project-img" alt="PUNTA ESMERALDA TORRE 3">
-                                <div class="card-body">
-                                    <h5>PUNTA ESMERALDA TORRE 3, COSTA RICA</h5>
-                                    <p>Area: 140,000 sf<br>Budget: $11,000,000<br>Year: 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/cipreses_de_granadilla.jpg" class="card-img-top project-img" alt="CIPRESES DE GRANADILLA">
-                                <div class="card-body">
-                                    <h5>CIPRESES DE GRANADILLA, COSTA RICA</h5>
-                                    <p>Area: 160,000 sf<br>Budget: $13,000,000<br>Year: 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/pijao.jpg" class="card-img-top project-img" alt="PIJAO">
-                                <div class="card-body">
-                                    <h5>PIJAO, PANAMÁ</h5>
-                                    <p>Area: 118,000 sf<br>Budget: $11,000,000<br>Year: 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/residential/pearl_island.jpg" class="card-img-top project-img" alt="PEARL ISLAND">
-                                <div class="card-body">
-                                    <h5>PEARL ISLAND, PANAMÁ</h5>
-                                    <p>Area: 162,000 sf<br>Budget: $32,000,000<br>Year: 2017</p>
+                                    <h5>VIVA JACO, Costa Rica</h5>
+                                    <p>Área: 160,000 sf<br>Presupuesto: $13,000,000<br>Año: 2023</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="industrial" role="tabpanel">
-                    <div class="row">
-                        <!-- Industrial Projects -->
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/bridgestone.jpg" class="card-img-top project-img" alt="BRIDGESTONE">
-                                <div class="card-body">
-                                    <h5>BRIDGESTONE, COSTA RICA</h5>
-                                    <p>Area: 75,000 sf<br>Budget: $8,000,000<br>Year: 2024</p>
-                                </div>
+
+                <!-- Institutional - con carousel ITSE -->
+                <div class="tab-pane fade" id="institutional">
+                    <h3 class="mt-4 text-center">Instituto Técnico Superior del Este (ITSE), Panamá</h3>
+                    <p class="text-center mb-4">Proyecto de $180MM+ donde obtuvimos el puntaje más alto en licitación (564.5/580) gracias a una pre-construcción estratégica y estimación precisa.</p>
+
+                    <div id="itseCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/ITSE1.jpg" class="d-block w-100" alt="ITSE 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE2.jpg" class="d-block w-100" alt="ITSE 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE3.jpg" class="d-block w-100" alt="ITSE 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE4.jpg" class="d-block w-100" alt="ITSE 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE5.jpg" class="d-block w-100" alt="ITSE 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE6.jpg" class="d-block w-100" alt="ITSE 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ITSE7.jpg" class="d-block w-100" alt="ITSE 7">
                             </div>
                         </div>
-                        <!-- Add other industrial projects similarly -->
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/intricom.jpg" class="card-img-top project-img" alt="INTRICOM">
-                                <div class="card-body">
-                                    <h5>INTRICOM, COSTA RICA</h5>
-                                    <p>Area: 48,000 sf<br>Budget: $5,000,000<br>Year: 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/intel_crat.jpg" class="card-img-top project-img" alt="INTEL CRAT FORMING GAS">
-                                <div class="card-body">
-                                    <h5>INTEL CRAT FORMING GAS, COSTA RICA</h5>
-                                    <p>Area: 5,000 sf<br>Budget: $1,500,000<br>Year: 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/gutis_corp.jpg" class="card-img-top project-img" alt="GUTIS CORP">
-                                <div class="card-body">
-                                    <h5>GUTIS CORP, COSTA RICA</h5>
-                                    <p>Area: 300,000 sf<br>Budget: $23,000,000<br>Year: 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/logistics_park.jpg" class="card-img-top project-img" alt="LOGISTICS PARK COLON CONTAINER TERMINAL">
-                                <div class="card-body">
-                                    <h5>LOGISTICS PARK COLON CONTAINER TERMINAL, PANAMÁ</h5>
-                                    <p>Area: 194,000 sf<br>Budget: $26,000,000<br>Year: 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/industrial/aluminum_can_plant.jpg" class="card-img-top project-img" alt="ALUMINUM CAN PLANT">
-                                <div class="card-body">
-                                    <h5>ALUMINUM CAN PLANT, PANAMÁ</h5>
-                                    <p>Area: 415,500 sf<br>Budget: $19,000,000<br>Year: 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add tabs for Institutional, Commercial, Hospitality similarly -->
-                <div class="tab-pane fade" id="institutional" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/institutional/itse.jpg" class="card-img-top project-img" alt="ITSE">
-                                <div class="card-body">
-                                    <h5>INSTITUTO TÉCNICO SUPERIOR DEL ESTE (ITSE), PANAMÁ</h5>
-                                    <p>Area: 1,500,000 sf<br>Budget: $198,000,000<br>Year: 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add others -->
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="commercial" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/commercial/building_caf.jpg" class="card-img-top project-img" alt="BUILDING CAF REGION NORTE">
-                                <div class="card-body">
-                                    <h5>BUILDING CAF REGION NORTE, PANAMÁ</h5>
-                                    <p>Area: 275,000 sf<br>Budget: $66,000,000<br>Year: 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add others -->
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="hospitality" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-4 project-card">
-                            <div class="card">
-                                <img src="images/hospitality/andaz_beach_club.jpg" class="card-img-top project-img" alt="ANDAZ BEACH CLUB">
-                                <div class="card-body">
-                                    <h5>ANDAZ BEACH CLUB, COSTA RICA</h5>
-                                    <p>Area: 21,500 sf<br>Budget: $2,600,000<br>Year: 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add others -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#itseCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#itseCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <h2 class="section-title text-center">Contáctenos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                    <div class="text-center mt-4">
+                        <p><strong>Email:</strong> javier@preconamerica.com</p>
+                        <p><strong>Ubicación:</strong> Miami, Florida, USA</p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            <p class="mt-3">Location: Florida, US | Email: info@preconamerica.com | LinkedIn: [Your LinkedIn]</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-center">
         <div class="container">
-            <p>&copy; 2026 PRECON AMERICA LLC. All rights reserved.</p>
+            <p>&copy; 2026 PRECON AMERICA LLC. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
