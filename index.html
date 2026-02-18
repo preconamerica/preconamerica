@@ -27,6 +27,7 @@
         }
         .project-card .card-img-top { height: 220px; object-fit: cover; }
         footer { background: var(--secondary); color: white; padding: 30px 0; }
+        .nav-tabs .nav-link { font-weight: bold; }
     </style>
 </head>
 <body>
@@ -150,15 +151,184 @@
             <p class="text-center lead mb-5">Selected landmark projects demonstrating proven expertise in delivering efficient, high-value results across sectors and regions.</p>
 
             <ul class="nav nav-tabs justify-content-center mb-4" id="projectsTab" role="tablist">
-                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#residential">Residential</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#hospitality">Hospitality</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#commercial">Commercial</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#industrial">Industrial</button></li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="commercial-tab" data-bs-toggle="tab" data-bs-target="#commercial" type="button" role="tab" aria-controls="commercial" aria-selected="true">Commercial</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="hospitality-tab" data-bs-toggle="tab" data-bs-target="#hospitality" type="button" role="tab" aria-controls="hospitality" aria-selected="false">Hospitality</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="educational-tab" data-bs-toggle="tab" data-bs-target="#educational" type="button" role="tab" aria-controls="educational" aria-selected="false">Educational</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="residential-tab" data-bs-toggle="tab" data-bs-target="#residential" type="button" role="tab" aria-controls="residential" aria-selected="false">Residential</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="industrial-tab" data-bs-toggle="tab" data-bs-target="#industrial" type="button" role="tab" aria-controls="industrial" aria-selected="false">Industrial</button>
+                </li>
             </ul>
 
-            <div class="tab-content">
+            <div class="tab-content" id="projectsTabContent">
+                <!-- Commercial first -->
+                <div class="tab-pane fade show active" id="commercial" role="tabpanel" aria-labelledby="commercial-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/caf.jpg" class="card-img-top" alt="Building Caf Región Norte">
+                                <div class="card-body">
+                                    <h5>Building Caf Región Norte, Panamá</h5>
+                                    <p>Modern institutional headquarters, to be LEED Gold certified.</p>
+                                    <p><strong>Area:</strong> 275,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/estee_lauder.jpg" class="card-img-top" alt="Estee Lauder">
+                                <div class="card-body">
+                                    <h5>Estee Lauder, Panamá</h5>
+                                    <p>Modern and luxurious corporate offices.</p>
+                                    <p><strong>Area:</strong> 32,500 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/liberty.jpg" class="card-img-top" alt="Liberty Offices">
+                                <div class="card-body">
+                                    <h5>Liberty Offices, Panamá</h5>
+                                    <p>Transnational corporate offices.</p>
+                                    <p><strong>Area:</strong> 32,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/nestle.jpg" class="card-img-top" alt="Nestle">
+                                <div class="card-body">
+                                    <h5>Nestle, Panamá</h5>
+                                    <p>Remodeling of existing corporate offices.</p>
+                                    <p><strong>Area:</strong> 25,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/cinepolis.jpg" class="card-img-top" alt="Cinepolis Altaplaza">
+                                <div class="card-body">
+                                    <h5>Cinepolis Altaplaza, Panamá</h5>
+                                    <p>New cinema with modern 4DX rooms.</p>
+                                    <p><strong>Area:</strong> 75,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/automercado.jpg" class="card-img-top" alt="Automercado Santa Ana">
+                                <div class="card-body">
+                                    <h5>Automercado Santa Ana, Costa Rica</h5>
+                                    <p>Supermarket remodeling.</p>
+                                    <p><strong>Area:</strong> 16,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/estacionamiento_panama.jpg" class="card-img-top" alt="Estacionamiento Panama Pacifico">
+                                <div class="card-body">
+                                    <h5>Estacionamiento Panama Pacifico, Panamá</h5>
+                                    <p>Parking building for IBP.</p>
+                                    <p><strong>Area:</strong> 290,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/sede_salud.jpg" class="card-img-top" alt="Sede Regional Metropolitana">
+                                <div class="card-body">
+                                    <h5>Sede Regional Metropolitana, Panamá</h5>
+                                    <p>New regional headquarters and support offices for Ministry of Health.</p>
+                                    <p><strong>Area:</strong> 83,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospitality -->
+                <div class="tab-pane fade" id="hospitality" role="tabpanel" aria-labelledby="hospitality-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/four_seasons.jpg" class="card-img-top" alt="Four Seasons Caye Chapel">
+                                <div class="card-body">
+                                    <h5>Four Seasons Caye Chapel, Belize</h5>
+                                    <p>Luxury hotel resort emphasizing constructability and premium finishes.</p>
+                                    <p><strong>Area:</strong> 334,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/waldorf.jpg" class="card-img-top" alt="Waldorf Astoria">
+                                <div class="card-body">
+                                    <h5>Waldorf Astoria, Costa Rica</h5>
+                                    <p>Luxury oceanfront hotel development with complex pre-construction optimization.</p>
+                                    <p><strong>Area:</strong> 376,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/andaz.jpg" class="card-img-top" alt="Andaz Beach Club">
+                                <div class="card-body">
+                                    <h5>Andaz Beach Club, Costa Rica</h5>
+                                    <p>Luxury beach club at Andaz hotel.</p>
+                                    <p><strong>Area:</strong> 21,500 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational -->
+                <div class="tab-pane fade" id="educational" role="tabpanel" aria-labelledby="educational-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/itse.jpg" class="card-img-top" alt="ITSE">
+                                <div class="card-body">
+                                    <h5>Instituto Técnico Superior del Este (ITSE), Panamá</h5>
+                                    <p>New construction technical institute campus, LEED Gold certified, with top bid score in pre-construction.</p>
+                                    <p><strong>Area:</strong> 1,500,000 sf+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/utp.jpg" class="card-img-top" alt="Universidad Tecnológica de Panamá">
+                                <div class="card-body">
+                                    <h5>Universidad Tecnológica de Panamá</h5>
+                                    <p>New university campus construction including 4 buildings and infrastructure.</p>
+                                    <p><strong>Area:</strong> 162,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/escuelas_rancho.jpg" class="card-img-top" alt="Escuelas en Comarca Ngäbe-Buglé">
+                                <div class="card-body">
+                                    <h5>Escuelas en Comarca Ngäbe-Buglé, Panamá</h5>
+                                    <p>New construction of rural schools to replace tin structures.</p>
+                                    <p><strong>Area:</strong> 323,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Residential -->
-                <div class="tab-pane fade show active" id="residential">
+                <div class="tab-pane fade" id="residential" role="tabpanel" aria-labelledby="residential-tab">
                     <div class="row g-4">
                         <div class="col-md-4">
                             <div class="card project-card shadow-sm">
@@ -242,6 +412,16 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card project-card shadow-sm">
+                                <img src="images/mohari.jpg" class="card-img-top" alt="Mohari">
+                                <div class="card-body">
+                                    <h5>Mohari, Costa Rica</h5>
+                                    <p>Ultra-luxury home facing the sea.</p>
+                                    <p><strong>Area:</strong> 27,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
                                 <img src="images/villa_belize.jpg" class="card-img-top" alt="Villa Belice">
                                 <div class="card-body">
                                     <h5>Villa, Belice</h5>
@@ -253,131 +433,9 @@
                     </div>
                 </div>
 
-                <!-- Hospitality -->
-                <div class="tab-pane fade" id="hospitality">
+                <!-- Industrial -->
+                <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
                     <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/four_seasons.jpg" class="card-img-top" alt="Four Seasons Caye Chapel">
-                                <div class="card-body">
-                                    <h5>Four Seasons Caye Chapel, Belize</h5>
-                                    <p>Luxury hotel resort emphasizing constructability and premium finishes.</p>
-                                    <p><strong>Area:</strong> 334,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/waldorf.jpg" class="card-img-top" alt="Waldorf Astoria">
-                                <div class="card-body">
-                                    <h5>Waldorf Astoria, Costa Rica</h5>
-                                    <p>Luxury oceanfront hotel development with complex pre-construction optimization.</p>
-                                    <p><strong>Area:</strong> 376,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/andaz.jpg" class="card-img-top" alt="Andaz Beach Club">
-                                <div class="card-body">
-                                    <h5>Andaz Beach Club, Costa Rica</h5>
-                                    <p>Luxury beach club at Andaz hotel.</p>
-                                    <p><strong>Area:</strong> 21,500 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Commercial -->
-                <div class="tab-pane fade" id="commercial">
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/caf.jpg" class="card-img-top" alt="Building Caf Región Norte">
-                                <div class="card-body">
-                                    <h5>Building Caf Región Norte, Panamá</h5>
-                                    <p>Modern institutional headquarters, to be LEED Gold certified.</p>
-                                    <p><strong>Area:</strong> 275,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/estee_lauder.jpg" class="card-img-top" alt="Estee Lauder">
-                                <div class="card-body">
-                                    <h5>Estee Lauder, Panamá</h5>
-                                    <p>Modern and luxurious corporate offices.</p>
-                                    <p><strong>Area:</strong> 32,500 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/liberty.jpg" class="card-img-top" alt="Oficinas Liberty">
-                                <div class="card-body">
-                                    <h5>Oficinas Liberty, Panamá</h5>
-                                    <p>Transnational corporate offices.</p>
-                                    <p><strong>Area:</strong> 32,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/nestle.jpg" class="card-img-top" alt="Nestle">
-                                <div class="card-body">
-                                    <h5>Nestle, Panamá</h5>
-                                    <p>Remodeling of existing corporate offices.</p>
-                                    <p><strong>Area:</strong> 25,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/cinepolis.jpg" class="card-img-top" alt="Cinepolis Altaplaza">
-                                <div class="card-body">
-                                    <h5>Cinepolis Altaplaza, Panamá</h5>
-                                    <p>New cinema with modern 4DX rooms.</p>
-                                    <p><strong>Area:</strong> 75,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/automercado.jpg" class="card-img-top" alt="Automercado Santa Ana">
-                                <div class="card-body">
-                                    <h5>Automercado Santa Ana, Costa Rica</h5>
-                                    <p>Supermarket remodeling.</p>
-                                    <p><strong>Area:</strong> 16,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Industrial / Institutional -->
-                <div class="tab-pane fade" id="industrial">
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/itse.jpg" class="card-img-top" alt="ITSE">
-                                <div class="card-body">
-                                    <h5>Instituto Técnico Superior del Este (ITSE), Panamá</h5>
-                                    <p>New construction technical institute campus, LEED Gold certified, with top bid score in pre-construction.</p>
-                                    <p><strong>Area:</strong> 1,500,000 sf+</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card project-card shadow-sm">
-                                <img src="images/utp.jpg" class="card-img-top" alt="Universidad Tecnológica de Panamá">
-                                <div class="card-body">
-                                    <h5>Universidad Tecnológica de Panamá</h5>
-                                    <p>New university campus construction including 4 buildings and infrastructure.</p>
-                                    <p><strong>Area:</strong> 162,000 sf</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-4">
                             <div class="card project-card shadow-sm">
                                 <img src="images/gutis.jpg" class="card-img-top" alt="Gutis Corp">
@@ -410,11 +468,31 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card project-card shadow-sm">
-                                <img src="images/escuelas_rancho.jpg" class="card-img-top" alt="Reemplazo Escuelas Rancho">
+                                <img src="images/aluminum_plant.jpg" class="card-img-top" alt="Aluminum Can Plant">
                                 <div class="card-body">
-                                    <h5>Reemplazo Escuelas Rancho, Panamá</h5>
-                                    <p>New construction of rural schools to replace tin structures.</p>
-                                    <p><strong>Area:</strong> 323,000 sf</p>
+                                    <h5>Aluminum Can Plant, Panamá</h5>
+                                    <p>Modern aluminum can factory.</p>
+                                    <p><strong>Area:</strong> 415,500 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/logistics_colon.jpg" class="card-img-top" alt="Logistics Park Colon">
+                                <div class="card-body">
+                                    <h5>Logistics Park Colon Container Terminal, Panamá</h5>
+                                    <p>Logistics center in Colon including infrastructure.</p>
+                                    <p><strong>Area:</strong> 194,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <img src="images/intel_crat.jpg" class="card-img-top" alt="Intel Crat Forming Gas">
+                                <div class="card-body">
+                                    <h5>Intel Crat Forming Gas, Costa Rica</h5>
+                                    <p>Special gases filling center.</p>
+                                    <p><strong>Area:</strong> 5,000 sf</p>
                                 </div>
                             </div>
                         </div>
