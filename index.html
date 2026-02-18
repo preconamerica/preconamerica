@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title con alcance ampliado -->
     <title>Precon America | Pre-Construction Consulting & Cost Estimating – Based in Miami, Serving the Americas</title>
     
-    <!-- Meta description con enfoque en las Américas -->
     <meta name="description" content="Precon America: expert pre-construction consulting, accurate cost estimating, bidding strategies, cost control and project management. Based in Miami, serving the United States, Central America, the Caribbean and beyond. With 18+ years of international experience delivering premium results across the Americas.">
     
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://preconamerica.com/">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="Precon America – Pre-Construction Consulting Serving the Americas">
     <meta property="og:description" content="Miami-based pre-construction and cost estimating experts with 18+ years of experience across the US, Central America and the Caribbean. Pre-Construction Consulting → Premium Construction → Premium Results.">
     <meta property="og:url" content="https://preconamerica.com/">
@@ -108,7 +105,7 @@
         </div>
     </section>
 
-    <!-- Sección SEO corta – alcance a las Américas -->
+    <!-- Sección SEO -->
     <section class="py-5">
         <div class="container text-center">
             <h2 class="section-title">Pre-Construction Consulting & Cost Estimating – Based in Miami, Serving the Americas</h2>
@@ -654,25 +651,32 @@
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact – con Formspree conectado -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title text-center">Contact Us</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <form>
+                    <form action="https://formspree.io/f/xlgwlwgq" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Precon America website">
+
                         <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" required>
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
+
                         <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" required>
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
+
                         <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="5" required></textarea>
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         </div>
+
+                        <input type="text" name="_gotcha" style="display:none">
+
                         <button type="submit" class="btn btn-primary w-100">Send Message</button>
                     </form>
                     <div class="text-center mt-4">
