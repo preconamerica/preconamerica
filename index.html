@@ -25,9 +25,31 @@
             margin-bottom: 40px;
             font-weight: bold;
         }
-        .project-card .card-img-top { height: 220px; object-fit: cover; }
+        .project-card {
+            height: 100%; /* Uniform card height */
+        }
+        .project-card .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        .project-card .card-body {
+            min-height: 180px; /* Fixed body height for uniformity */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .nav-tabs .nav-link {
+            font-weight: bold;
+            color: var(--secondary) !important;
+            font-size: 1.1rem;
+            padding: 12px 24px;
+        }
+        .nav-tabs .nav-link.active {
+            color: white !important;
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
         footer { background: var(--secondary); color: white; padding: 30px 0; }
-        .nav-tabs .nav-link { font-weight: bold; }
     </style>
 </head>
 <body>
@@ -169,7 +191,7 @@
             </ul>
 
             <div class="tab-content" id="projectsTabContent">
-                <!-- Commercial first -->
+                <!-- Commercial -->
                 <div class="tab-pane fade show active" id="commercial" role="tabpanel" aria-labelledby="commercial-tab">
                     <div class="row g-4">
                         <div class="col-md-4">
