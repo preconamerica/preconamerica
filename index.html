@@ -53,7 +53,7 @@
             background-size: cover; background-position: center;
             min-height: 90vh; display: flex; align-items: center; color: white; position: relative;
         }
-        .hero .container { padding-top: 100px; } /* Más espacio arriba para evitar corte */
+        .hero .container { padding-top: 100px; }
         .text-shadow { text-shadow: 2px 2px 12px rgba(0,0,0,0.7); }
         .section-title {
             color: var(--secondary);
@@ -417,6 +417,19 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Nuevo proyecto agregado al final de Commercial -->
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <div class="img-wrapper">
+                                    <img src="images/pf_changs.jpg" class="card-img-top" alt="PF Chang's Panamá">
+                                </div>
+                                <div class="card-body">
+                                    <h5>PF Chang's Panamá, Multiplaza</h5>
+                                    <p>Construcción y remodelaciones de restaurante en Multiplaza Panamá.</p>
+                                    <p><strong>Area:</strong> 7,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Hospitality -->
@@ -455,6 +468,19 @@
                                     <h5>Andaz Beach Club, Costa Rica</h5>
                                     <p>Luxury beach club at Andaz hotel.</p>
                                     <p><strong>Area:</strong> 21,500 sf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nuevo proyecto agregado al final de Hospitality -->
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <div class="img-wrapper">
+                                    <img src="images/yoga_deck_four_seasons.jpg" class="card-img-top" alt="Yoga Deck Four Seasons Papagayo">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Yoga Deck Four Seasons Papagayo, Costa Rica</h5>
+                                    <p>Construcción de yoga deck en hotel Four Seasons Papagayo.</p>
+                                    <p><strong>Area:</strong> 1,000 sf</p>
                                 </div>
                             </div>
                         </div>
@@ -624,6 +650,19 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Nuevo proyecto agregado al final de Residential -->
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <div class="img-wrapper">
+                                    <img src="images/casco_antiguo.jpg" class="card-img-top" alt="Vivienda Casco Antiguo Panamá">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Vivienda Casco Antiguo, Panamá</h5>
+                                    <p>Construcción y restauración de vivienda en Casco Antiguo.</p>
+                                    <p><strong>Area:</strong> 12,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Industrial -->
@@ -701,6 +740,19 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Nuevo proyecto agregado al final de Industrial -->
+                        <div class="col-md-4">
+                            <div class="card project-card shadow-sm">
+                                <div class="img-wrapper">
+                                    <img src="images/mayca.jpg" class="card-img-top" alt="Almacenes Mayca Panamá">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Almacenes Mayca, Panamá</h5>
+                                    <p>Construcción y acondicionamientos de almacenes congelados, fríos y secos.</p>
+                                    <p><strong>Area:</strong> 40,000 sf</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -753,7 +805,7 @@
     <!-- Script para contadores animados -->
     <script>
         const counters = document.querySelectorAll('.counter');
-        const duration = 2500; // 2.5 segundos
+        const duration = 2500;
 
         const animateCounter = (el) => {
             const target = parseInt(el.getAttribute('data-target'));
