@@ -53,6 +53,7 @@
             background-size: cover; background-position: center;
             min-height: 90vh; display: flex; align-items: center; color: white; position: relative;
         }
+        .hero .container { padding-top: 100px; } /* Más espacio arriba para evitar corte */
         .text-shadow { text-shadow: 2px 2px 12px rgba(0,0,0,0.7); }
         .section-title {
             color: var(--secondary);
@@ -101,14 +102,15 @@
             padding: 1.4rem 2rem; min-width: 180px;
         }
         .counter {
-            font-size: 2.5rem; font-weight: bold; color: white;
+            font-size: 2.8rem; font-weight: bold; color: white;
         }
         @media (max-width: 768px) {
-            .hero { min-height: 80vh; padding: 100px 0 60px; }
+            .hero { min-height: 80vh; padding: 80px 0 60px; }
+            .hero .container { padding-top: 80px; }
             h1.display-3 { font-size: 3rem; }
             .slogan { font-size: 1.4rem; }
             .stat-box { padding: 1rem 1.5rem; min-width: 140px; }
-            .counter { font-size: 2rem; }
+            .counter { font-size: 2.2rem; }
         }
     </style>
 </head>
@@ -147,27 +149,27 @@
             <div class="row justify-content-center g-4 g-md-5" id="stats-section">
                 <div class="col-auto">
                     <div class="stat-box text-center">
-                        <div class="counter" data-target="18">+</div>
+                        <div class="counter" data-target="18">+0</div>
                         <small>Years Experience</small>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="stat-box text-center">
-                        <div class="counter" data-target="50">+</div>
+                        <div class="counter" data-target="50">+0</div>
                         <small>Successful Projects Completed</small>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="stat-box text-center">
-                        <div class="counter" data-target="1000">+$</div>
-                        <small>in Constructed Works (Billions)</small>
+                        <div class="counter" data-target="1000">+$0M</div>
+                        <small>in Constructed Works (Millions)</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección SEO adicional (sin slogan repetido) -->
+    <!-- Sección SEO adicional -->
     <section class="py-5">
         <div class="container text-center">
             <h2 class="section-title">Pre-Construction Consulting & Cost Estimating – Based in Miami, Serving the Americas</h2>
@@ -756,15 +758,23 @@
         const animateCounter = (el) => {
             const target = parseInt(el.getAttribute('data-target'));
             let count = 0;
-            const increment = target / (duration / 16); // ~60fps
+            const increment = target / (duration / 16);
 
             const updateCount = () => {
                 count += increment;
                 if (count < target) {
-                    el.textContent = Math.ceil(count) + (el.textContent.includes('$') ? '' : '+');
+                    if (el.textContent.includes('$')) {
+                        el.textContent = '+$' + Math.ceil(count) + 'M';
+                    } else {
+                        el.textContent = '+' + Math.ceil(count);
+                    }
                     requestAnimationFrame(updateCount);
                 } else {
-                    el.textContent = (el.textContent.includes('$') ? '+$' : '+') + target + (el.textContent.includes('$') ? 'B' : '');
+                    if (el.textContent.includes('$')) {
+                        el.textContent = '+$' + target + 'M';
+                    } else {
+                        el.textContent = '+' + target;
+                    }
                 }
             };
             updateCount();
